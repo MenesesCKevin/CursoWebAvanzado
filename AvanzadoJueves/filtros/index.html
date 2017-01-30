@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--Directivas de angular y nos dice que es un pagina de angular-->
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular</title>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+  </head>
+  <body>
+    <!--<h1>Hola mundo</h1>
+    <h1>{{"Hola mundo"}}</h1>-->
+    <!--
+    <div>
+      <h4>Filtros angular</h4>
+      <span>DoNalDo</span>
+      <br>
+      <span>{{"DoNalDo minusculas" | lowercase}}</span>
+      <br>
+      <span>{{"DoNalDo mayusculas" | uppercase}}</span>
+      <br>
+      <br>
+      <span>formato de numeros 1350</span>
+      <br>
+      <span>{{1350 | currency}}</span>
+      <br>
+      <br>
+      <span>numero separado por comas</span>
+      <br>
+      <span>{{1111124543445|number}}</span>
+    </div>-->
+
+    <!--Ligar variables de html y JS-->
+    <!--value="Jonh" size="4"-->
+    <div>
+    <h4>ng-mode en angular</h4>
+
+    <p>
+      <label>Dime tu nombre:</label>
+
+      <input type="text" ng-model="nombre" placeholder="Aquí va tu nombre" >
+    </p>
+    <p>
+      <label>Tu nombre es:  </label> {{nombre}}
+    </p>
+    <p>
+      <label>Selecciona tu país:</label>
+      <select ng-model="pais">
+        <option value="1">Mexico</option>
+        <option value="2">Francia</option>
+        <option value="3">Alemania</option>
+        <option value="4">Marruecos</option>
+      </select>
+      <label> Tu pais es: </label>{{pais}}
+    </p>
+    <p>
+      <label>sectioniones genero</label>
+      <input type="radio" name="" value="M" ng-model="genero">Masculino
+      <input type="radio" name="" value="F" ng-model="genero">Femanino
+      <br>
+      <label>Tu genero es: </label>{{genero}}
+    </p>
+    <p>
+      <label>¿Cúal es tu pasatiempo?</label>
+      <input type="checkbox" ng-model="opcion1">Patinar
+      <input type="checkbox" ng-model="opcion2">Leer
+      <br>
+      <label>A ti te gusta: </label><br>{{opcion1}}<br>{{opcion2}}
+    </p>
+    </div>
+
+
+  </body>
+  <script type="text/javascript" src="js/app.js"></script>
+</html>
